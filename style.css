@@ -1,0 +1,61 @@
+﻿html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em; /*18/18*/
+}
+
+body{
+    width: 70%;/*Escolhi configurar para ocupar 70% da tela*/
+    margin: 0 auto;
+}
+
+figure{
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+.main-content{
+    width: 86.734693%; /* 850 / 980 */
+    float:left;
+    margin: 1.5306% 0; /* 15 / 980 Escolhi utilizar % poderia ser em*/
+}
+
+.main-content dl dt{
+    font-weight: bold;
+}
+.secundary-content{
+    width: 61.224489%; /*600 / 700*/
+    padding: 1.42857%; /*10 / 700 Escolhi utilizar % poderia ser em*/
+}
+
+.main-footer{
+    clear: both;
+    background-color: #F0F0F0;
+    padding: 1.0204%; /*10 / 980 Escolhi utilizar % poderia ser em*/
+    text-align: center;
+    margin: 1.5306% auto; /*15 / 980 Escolhi utilizar % poderia ser em*/
+}
+
+
+
+/*Media Queries*/
+@media all and (max-width: 640px){/*Pode ser convertido para em*/
+    .main-content,
+    .aside-nav{
+        float : none
+    }
+
+    .secundary-content{
+        float:none;
+        width: auto
+    }
+}
+
+@media all and (max-width: 320px){/*Pode ser convertido para em*/
+     .main-header img{
+        display:none
+    }
+}
